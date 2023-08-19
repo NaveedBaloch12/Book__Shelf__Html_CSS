@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgba(255, 118, 118, 0.425);
+    background-image: url(img/bg-intro-desktop.png);
+}
+
+:root {
+    --bdr--rds: 10px;
+
+    --secondary--clr: rgb(230, 230, 230);
+}
+
+.heading__md {
+    font-size: 1.1em;
+    margin: .8rem 0;
+}
+
+.heading__lrg {
+    font-size: 2em;
+}
+.heading__etra_lrg {
+    font-size: clamp(1.5em, 3vw, 3em);
+}
+
+button {
+    padding: 6px 12px;
+    font-size: 1rem;
+    margin: .5rem;
+    border-radius: var(--bdr--rds);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+button:hover {
+    color: white;
+    background-color: green;
+}
+
+/* ========================================================================== */
+.pop_up__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    max-width: min(30rem, 80%);
+    box-shadow: 0px 0px 18px rgba(72, 72, 72, 0.564);
+    border-radius: var(--bdr--rds);
+    background-color: var(--secondary--clr);
+}
+
+
+.pop_up__container label {
+    font-size: 1.2em;
+}
+
+.pop_up__container input[type=text],
+.pop_up__container input[type=number] {
+    display: block;
+    margin-block: 4px 8px;
+    font-size: 1.3em;
+    border-radius: var(--bdr--rds);
+    padding: 8px 12px;
+}
+
+.pop_up__container input:focus {
+    border-color: green;
+    background-color: rgba(0, 0, 255, 0.106);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    display: none;
+    margin: 0;
+}
+
+select{
+    padding: 6px 4px;
+    margin: 12px 0;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+.massage{
+    text-align: center;
+    margin: 8px 0;
+    color: red;
+}
+
+
+/* =========================================================================== */
+
+header {
+    padding: 1em 5%;
+    border-bottom: 8px solid rgba(128, 128, 128, 0.293);
+}
+
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+#show__pop_up {
+    font-size: 2em;
+}
+
+.popup__btn {
+    margin: 1em;
+    text-align: center;
+}
+
+/* =============================================================================== */
+
+.books__list{
+    display:  flex;
+}
+
+
+.Book{
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--secondary--clr);
+    border-radius: var(--bdr--rds);
+}
+
+.Book__Info{
+    border-radius: var(--bdr--rds);
+    padding: 1em;
+    background-color: white;
+}

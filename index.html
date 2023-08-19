@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library | By Naveed Hassan</title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <dialog class="pop_up__container" id="pop_up">
+        <h2 class="heading__md">Add Book</h2>
+        <label for="title">Enter Book Name:</label>
+        <input type="text" name="title" id="title" placeholder="Book Name..." required>
+
+        <label for="author">Enter Author Name:</label>
+        <input type="text" name="author" id="author" placeholder="Author Name..." required>
+
+        <label for="pages">Number of Pages:</label>
+        <input type="number" name="pages" placeholder="Pages..." id="pages">
+        <div>
+            <label>
+                Have you Read Book?
+                <select>
+                    <option value="No">No</option>
+                    <option value="yes" >Yes</option>
+                </select>
+            </label>
+        </div>
+        <button class="add_book_btn" type="submit">Add Book</button>
+        <button class="cancel_btn" value="cancel" formmethod="dialog">Cancel</button>
+
+        <div class="massage">
+            Please Fill Input Forms
+        </div>
+    </dialog>
+
+    <header>
+        <div class="header__logo">
+            <span class="logo__img"><img src="img/icons8-book-shelf-96.png" alt="Logo"></span>
+            <h1 class="heading__etra_lrg">Book Shelf</h1>
+        </div>
+    </header>
+
+    <div class="main__container">
+        <div class="popup__btn">
+            <button id="show__pop_up">Add Book</button>
+        </div>
+        <div class="books__list">
+
+        </div>
+    </div>
+</body>
+
+</html>
